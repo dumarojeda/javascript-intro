@@ -42,6 +42,10 @@ article a.vote-button {
   vertical-align: sub;
 }
 
+article a.vote-button.active {
+  color: #F4712D;
+}
+
 
 article h2 {
   display: inline;

@@ -10,7 +10,9 @@ end
 get '/posts/:id/vote' do
   post = Post.find(params[:id])
   post.votes.create(value: 1)
-  redirect "/posts"
+  #redirect "/posts"
+  content_type :json
+  {value: post.points}.to_json
 end
 
 delete '/posts/:id' do
